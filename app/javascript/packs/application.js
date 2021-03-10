@@ -7,7 +7,18 @@ import Rails from "@rails/ujs"
 import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
+import "stylesheets/application.scss"
+
 
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+
+import { config, library, dom } from '@fortawesome/fontawesome-svg-core'
+// Change the config to fix the flicker
+config.mutateApproach = 'sync'
+// Import icons
+import { faInfoCircle, faCheckCircle, faExclamationCircle, faExclamationTriangle } from '@fortawesome/free-solid-svg-icons'
+library.add(faInfoCircle, faCheckCircle, faExclamationCircle, faExclamationTriangle)
+// Load icons
+dom.watch()
