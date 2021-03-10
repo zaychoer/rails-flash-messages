@@ -22,3 +22,5 @@ import { faInfoCircle, faCheckCircle, faExclamationCircle, faExclamationTriangle
 library.add(faInfoCircle, faCheckCircle, faExclamationCircle, faExclamationTriangle)
 // Load icons
 dom.watch()
+
+import "controllers"
