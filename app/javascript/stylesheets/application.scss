@@ -1,3 +1,13 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+// Countdown animation for notification controller
+@keyframes notification-countdown {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
